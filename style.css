@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #ffebcc;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-side > h1 {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 3rem;
+  font-weight: 550;
+  margin: 2rem;
+}
+
+#page {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.guess {
+  text-align: center;
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  font-size: 2rem;
+}
+
+.left-side > button {
+  margin: 5px 0 0 0;
+  background-color: rgb(1, 174, 239);
+  font-weight: 400;
+  font-size: 1.2rem;
+  border: 0;
+  padding: 12px;
+}
+
+.right-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-side > img {
+  object-fit: contain;
+  box-shadow: 3px 6px 22px 0px rgba(254, 242, 1, 0.75);
+  -webkit-box-shadow: 3px 6px 22px 0px rgba(254, 242, 1, 0.75);
+  -moz-box-shadow: 3px 6px 22px 0px rgba(254, 242, 1, 0.75);
+  margin: 6rem 0 0 0;
+  height: 32rem;
+  max-width: 100vw;
+}
+
+footer {
+  color: rgb(172, 172, 172);
+  text-align: center;
+  margin-top: 4.5rem;
+}
+
+/* Working on different screens */
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: #ffebcc;
+  }
+
+  .container {
+    margin: 1rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .left-side > h1 {
+    font-family: "Roboto", sans-serif !important;
+    font-size: 2.2rem;
+    text-align: center;
+    font-weight: 550;
+    margin: 2rem;
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  #page {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .guess {
+    text-align: center;
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.5rem;
+  }
+
+  .right-side > img {
+    object-fit: contain;
+    margin: 70px;
+    height: 25rem;
+    max-width: 100vw;
+  }
+}
